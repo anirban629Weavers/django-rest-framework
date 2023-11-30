@@ -42,3 +42,8 @@ def check3():
     serializer = SnippetSerializer(Snippet.objects.all(), many=True)
     print(serializer.data)
     return serializer.data
+
+
+def Check_Serializer_Modern():
+    serializer = SnippetSerializer()
+    print(repr(serializer))
